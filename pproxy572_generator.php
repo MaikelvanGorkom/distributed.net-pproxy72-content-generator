@@ -1,10 +1,6 @@
 <?php
 
 include "config.php";
-$EMAILFILE = "email.txt";
-$OSFILE = "os.txt";
-$CPUFILE = "cpu.txt";
-$CLIENTVERSIONFILE = "clientversion.txt";
 
 function LOAD_FILE_TO_ARRAY($FILE){
     $ARRAY = file($FILE);
@@ -21,7 +17,6 @@ function RANDOM_STRING($LN){
     return $RANDOM_STRING; 
 }
 
-$NEEDED_ROWS = 100000;
 $STARTDATE = strtotime($START_FROM_DATE);
 $ENDDATE = strtotime($END_ON_DATE);
 
